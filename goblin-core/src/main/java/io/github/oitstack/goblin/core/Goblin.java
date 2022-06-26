@@ -228,6 +228,7 @@ public class Goblin {
                         container.getPlaceHolders().entrySet().stream().forEach(
                                 e -> placeHolders.put(String.format(PLACE_HOLDER_TPL, image.getId().toUpperCase(), e.getKey()), e.getValue())
                         );
+
                         containerMap.put(image.getId(), container);
                         cdl.countDown();
                     }).start();
