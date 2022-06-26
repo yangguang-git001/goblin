@@ -204,7 +204,7 @@ public class Goblin {
                 nodes.forEach(node -> {
                     Image image = (Image) node.getValue();
                     new Thread(() -> {
-                        Thread.currentThread().setName("Goblin-Container-Bootstratp-" + image.getId());
+                        Thread.currentThread().setName("Goblin-Container-Bootstrap-" + image.getId());
                         GoblinContainer container = null;
                         try {
                             Class<?> cls = Class.forName(containers.get(image.getType()).getClass().getName());
